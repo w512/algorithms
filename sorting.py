@@ -49,26 +49,30 @@ def quick_sort(input_list, begin=0, end=None):
 
 
 if __name__ == '__main__':
+
+    algorithms = [
+        {
+            'name': 'Bubble sort 1',
+            'code': bubble_sort,
+        },
+        {
+            'name': 'Bubble sort 2',
+            'code': bubble_sort_2,
+        },
+        {
+            'name': 'Quick sort',
+            'code': quick_sort,
+        },
+    ]
+
     test_list = [54, 22, 756, 1, 23, 3, 77, 43, 9, 2, 32, 97]
-    test_list_2 = [54, 22, 756, 1, 23, 3, 77, 43, 9, 2, 32, 97]
 
-    tmp_list = test_list[:]
-    print('Bubble sort (1)')
-    print('List before:', tmp_list)
-    bubble_sort(tmp_list)
-    print('List after: ', tmp_list)
-    print()
+    for algorithm in algorithms:
+        tmp_list = test_list[:]
+        print(algorithm['name'])
+        print('List before:', tmp_list)
+        algorithm['code'](tmp_list)
+        print('List after: ', tmp_list)
+        print()
 
-    tmp_list = test_list[:]
-    print('Bubble sort (2)')
-    print('List before:', tmp_list)
-    bubble_sort_2(tmp_list)
-    print('List after: ', tmp_list)
-    print()
 
-    tmp_list = test_list[:]
-    print('Quick sort')
-    print('List before:', tmp_list)
-    quick_sort(tmp_list)
-    print('List after: ', tmp_list)
-    print()
