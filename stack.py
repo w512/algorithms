@@ -45,6 +45,30 @@ if __name__ == '__main__':
     print('Stack size: {0}'.format(s.size()))
     print(s)
 
+    # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    s.push(1)
+    s.push(2)
+    s.push(3)
+
+    def func_1():
+        a = s.pop()
+        b = s.pop()
+        result = a + b
+        s.push(result)
+
+    def func_2():
+        a = s.pop()
+        b = s.pop()
+        return (a, b, a + b)
+
+    print('\n\n')
+    print(s)
+    func_1()
+    print(func_2())
+    print(s)
+
+
+
 
 
 
