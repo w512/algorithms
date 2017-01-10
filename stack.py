@@ -29,27 +29,33 @@ class Stack:
 
 
 if __name__ == '__main__':
-
+    # creating stack and add elements
     s = Stack()
     s.push('First')
     s.push('Second')
     s.push('Third')
     s.push('Fourth')
 
+    # show stack after creating
     print('Stack size: {0}'.format(s.size()))
     print(s)
+
+    # show how 'pop' works
     print(s.pop())
     print('Stack size: {0}'.format(s.size()))
     print(s)
+
+    # show how 'clear' works
     s.clear()
     print('Stack size: {0}'.format(s.size()))
     print(s)
 
-    # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    # add new elements to stack
     s.push(1)
     s.push(2)
     s.push(3)
 
+    # functions that work with stack (the alternative for global variables)
     def func_1():
         a = s.pop()
         b = s.pop()
@@ -61,6 +67,7 @@ if __name__ == '__main__':
         b = s.pop()
         return (a, b, a + b)
 
+    # show how functions work with stack
     print('\n\n')
     print(s)
     func_1()
