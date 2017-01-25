@@ -95,6 +95,11 @@ def merge_sort(input_list):
 
 
 if __name__ == '__main__':
+    """
+    Base sorting algorithms
+    https://en.wikipedia.org/wiki/Sorting_algorithm
+
+    """
 
     algorithms = [
         {

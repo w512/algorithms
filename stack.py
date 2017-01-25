@@ -29,6 +29,12 @@ class Stack:
 
 
 if __name__ == '__main__':
+    """
+    Base stack implementation
+    https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
+
+    """
+
     # creating stack and add elements
     s = Stack()
     s.push('First')

@@ -86,8 +86,11 @@ class LinkedList:
 
 
 if __name__ == '__main__':
-    print('Linked list conception')
-    print('https://en.wikipedia.org/wiki/Linked_list')
+    """
+    Linked list conception
+    https://en.wikipedia.org/wiki/Linked_list
+
+    """
 
     n1 = Node(234)
     n2 = Node(1)
