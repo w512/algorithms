@@ -15,8 +15,7 @@ https://en.wikipedia.org/wiki/Sorting_algorithm
 
 * Bubble sort (two variants)
 * Quick sort
-* Merge sort
-* Performance examples 
+* Merge sort 
 
 ### Linked list conception
 https://en.wikipedia.org/wiki/Linked_list
@@ -24,7 +23,7 @@ https://en.wikipedia.org/wiki/Linked_list
 ### Base stack implementation
 https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
 
-
+### Performance examples
 
 
 
